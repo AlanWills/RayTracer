@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="rtfgu" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/librtfgu-d" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/librtfgu" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="src" />
+			<Add directory="src/cameras" />
+			<Add directory="src/geo_obj" />
+			<Add directory="src/lights" />
+			<Add directory="src/materials" />
+			<Add directory="src/math" />
+			<Add directory="src/samplers" />
+			<Add directory="src/shaders" />
+			<Add directory="src/tracers" />
+			<Add directory="src/util" />
+		</Compiler>
+		<Unit filename="src/Constants.h" />
+		<Unit filename="src/IBuilder.h" />
+		<Unit filename="src/IRenderer.h" />
+		<Unit filename="src/RGBColor.cpp" />
+		<Unit filename="src/RGBColor.h" />
+		<Unit filename="src/ViewPlane.cpp" />
+		<Unit filename="src/ViewPlane.h" />
+		<Unit filename="src/World.cpp" />
+		<Unit filename="src/World.h" />
+		<Unit filename="src/cameras/Camera.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="src/cameras/Camera.h" />
+		<Unit filename="src/cameras/Pinhole.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="src/cameras/Pinhole.h" />
+		<Unit filename="src/geo_obj/Archway.cpp" />
+		<Unit filename="src/geo_obj/Archway.h" />
+		<Unit filename="src/geo_obj/BBox.cpp" />
+		<Unit filename="src/geo_obj/BBox.h" />
+		<Unit filename="src/geo_obj/BeveledBox.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="src/geo_obj/BeveledBox.h" />
+		<Unit filename="src/geo_obj/BeveledWedge.cpp" />
+		<Unit filename="src/geo_obj/BeveledWedge.h" />
+		<Unit filename="src/geo_obj/Compound.cpp" />
+		<Unit filename="src/geo_obj/Compound.h" />
+		<Unit filename="src/geo_obj/ConvexPartSphere.cpp" />
+		<Unit filename="src/geo_obj/ConvexPartSphere.h" />
+		<Unit filename="src/geo_obj/FlatMeshTriangle.cpp" />
+		<Unit filename="src/geo_obj/FlatMeshTriangle.h" />
+		<Unit filename="src/geo_obj/GeometricObject.cpp" />
+		<Unit filename="src/geo_obj/GeometricObject.h" />
+		<Unit filename="src/geo_obj/Grid.cpp" />
+		<Unit filename="src/geo_obj/Grid.h" />
+		<Unit filename="src/geo_obj/Instance.cpp" />
+		<Unit filename="src/geo_obj/Instance.h" />
+		<Unit filename="src/geo_obj/Mesh.cpp" />
+		<Unit filename="src/geo_obj/Mesh.h" />
+		<Unit filename="src/geo_obj/MeshTriangle.cpp" />
+		<Unit filename="src/geo_obj/MeshTriangle.h" />
+		<Unit filename="src/geo_obj/OpenCylinder.cpp" />
+		<Unit filename="src/geo_obj/OpenCylinder.h" />
+		<Unit filename="src/geo_obj/Plane.cpp" />
+		<Unit filename="src/geo_obj/Plane.h" />
+		<Unit filename="src/geo_obj/Rectangle.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="src/geo_obj/Rectangle.h" />
+		<Unit filename="src/geo_obj/Rosette.cpp" />
+		<Unit filename="src/geo_obj/Rosette.h" />
+		<Unit filename="src/geo_obj/SmoothMeshTriangle.cpp" />
+		<Unit filename="src/geo_obj/SmoothMeshTriangle.h" />
+		<Unit filename="src/geo_obj/SmoothTriangle.cpp" />
+		<Unit filename="src/geo_obj/SmoothTriangle.h" />
+		<Unit filename="src/geo_obj/Sphere.cpp" />
+		<Unit filename="src/geo_obj/Sphere.h" />
+		<Unit filename="src/geo_obj/Torus.cpp" />
+		<Unit filename="src/geo_obj/Torus.h" />
+		<Unit filename="src/geo_obj/Triangle.cpp" />
+		<Unit filename="src/geo_obj/Triangle.h" />
+		<Unit filename="src/lights/Ambient.cpp" />
+		<Unit filename="src/lights/Ambient.h" />
+		<Unit filename="src/lights/AreaLight.cpp" />
+		<Unit filename="src/lights/AreaLight.h" />
+		<Unit filename="src/lights/AreaLighting.cpp" />
+		<Unit filename="src/lights/AreaLighting.h" />
+		<Unit filename="src/lights/Directional.cpp" />
+		<Unit filename="src/lights/Directional.h" />
+		<Unit filename="src/lights/Light.cpp" />
+		<Unit filename="src/lights/Light.h" />
+		<Unit filename="src/materials/Material.cpp" />
+		<Unit filename="src/materials/Material.h" />
+		<Unit filename="src/materials/Matte.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="src/materials/Matte.h" />
+		<Unit filename="src/math/Maths.cpp" />
+		<Unit filename="src/math/Maths.h" />
+		<Unit filename="src/math/Matrix.cpp" />
+		<Unit filename="src/math/Matrix.h" />
+		<Unit filename="src/math/Normal.cpp" />
+		<Unit filename="src/math/Normal.h" />
+		<Unit filename="src/math/Point2D.cpp" />
+		<Unit filename="src/math/Point2D.h" />
+		<Unit filename="src/math/Point3D.cpp" />
+		<Unit filename="src/math/Point3D.h" />
+		<Unit filename="src/math/Ray.cpp" />
+		<Unit filename="src/math/Ray.h" />
+		<Unit filename="src/math/Vector3D.cpp" />
+		<Unit filename="src/math/Vector3D.h" />
+		<Unit filename="src/ply.h" />
+		<Unit filename="src/samplers/Hammersley2D.cpp" />
+		<Unit filename="src/samplers/Hammersley2D.h" />
+		<Unit filename="src/samplers/Jittered2D.cpp" />
+		<Unit filename="src/samplers/Jittered2D.h" />
+		<Unit filename="src/samplers/MultiJittered2D.cpp" />
+		<Unit filename="src/samplers/MultiJittered2D.h" />
+		<Unit filename="src/samplers/NRooks2D.cpp" />
+		<Unit filename="src/samplers/NRooks2D.h" />
+		<Unit filename="src/samplers/PureRandom2D.cpp" />
+		<Unit filename="src/samplers/PureRandom2D.h" />
+		<Unit filename="src/samplers/Regular2D.cpp" />
+		<Unit filename="src/samplers/Regular2D.h" />
+		<Unit filename="src/samplers/SampleGenerator.h" />
+		<Unit filename="src/shaders/BRDF.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="src/shaders/BRDF.h" />
+		<Unit filename="src/shaders/GlossySpecular.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="src/shaders/GlossySpecular.h" />
+		<Unit filename="src/shaders/Lambertian.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="src/shaders/Lambertian.h" />
+		<Unit filename="src/shaders/PerfectSpecular.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="src/shaders/PerfectSpecular.h" />
+		<Unit filename="src/shaders/Reflective.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="src/shaders/Reflective.h" />
+		<Unit filename="src/shaders/ShadeRec.cpp" />
+		<Unit filename="src/shaders/ShadeRec.h" />
+		<Unit filename="src/tracers/MultipleObjects.cpp" />
+		<Unit filename="src/tracers/MultipleObjects.h" />
+		<Unit filename="src/tracers/RayCast.cpp" />
+		<Unit filename="src/tracers/RayCast.h" />
+		<Unit filename="src/tracers/SingleSphere.cpp" />
+		<Unit filename="src/tracers/SingleSphere.h" />
+		<Unit filename="src/tracers/Tracer.cpp" />
+		<Unit filename="src/tracers/Tracer.h" />
+		<Unit filename="src/tracers/Whitted.cpp" />
+		<Unit filename="src/tracers/Whitted.h" />
+		<Unit filename="src/util/shuffle.cpp" />
+		<Unit filename="src/util/shuffle.h" />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<lib_finder disable_auto="1" />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
