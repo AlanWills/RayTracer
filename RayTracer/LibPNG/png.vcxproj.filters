@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\pngerror.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\pngget.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\pngmem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\pngpread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\pngread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\pngrio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\pngrtran.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\pngrutil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\pngset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\pngtrans.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\pngwio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\pngwrite.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\pngwtran.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\pngwutil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\png.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\pngconf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\pnglibconf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\pngpriv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\pngdebug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\pnginfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\pngstruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{BD5D78E1-D445-3A22-AD5C-D7E66D4FA8B9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{CD1F370A-3C38-34D6-812E-08C8EC5F7526}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

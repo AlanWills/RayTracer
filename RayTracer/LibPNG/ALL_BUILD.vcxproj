@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EF5D5FA0-42FC-3E36-85FD-3C8E5E632F09}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\GnuWin32\include;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\GnuWin32\include;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\GnuWin32\include;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\GnuWin32\include;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/alawi/Documents/RayTracer/RayTracer/LibPNG/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/alawi/Documents/RayTracer/RayTracer/LibPNG -BC:/Users/alawi/Documents/RayTracer/RayTracer/LibPNG --check-stamp-file C:/Users/alawi/Documents/RayTracer/RayTracer/LibPNG/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/alawi/Documents/RayTracer/RayTracer/LibPNG/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-ASM.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\SelectLibraryConfigurations.cmake;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\CMakeFiles\3.13.3\CMakeASMCompiler.cmake;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\CMakeFiles\3.13.3\CMakeCCompiler.cmake;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\CMakeFiles\3.13.3\CMakeRCCompiler.cmake;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\CMakeFiles\3.13.3\CMakeSystem.cmake;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\CMakeLists.txt;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\scripts\genchk.cmake.in;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\scripts\genout.cmake.in;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\scripts\gensrc.cmake.in;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\scripts\pnglibconf.h.prebuilt;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\scripts\test.cmake.in;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/alawi/Documents/RayTracer/RayTracer/LibPNG/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/alawi/Documents/RayTracer/RayTracer/LibPNG -BC:/Users/alawi/Documents/RayTracer/RayTracer/LibPNG --check-stamp-file C:/Users/alawi/Documents/RayTracer/RayTracer/LibPNG/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/alawi/Documents/RayTracer/RayTracer/LibPNG/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-ASM.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\SelectLibraryConfigurations.cmake;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\CMakeFiles\3.13.3\CMakeASMCompiler.cmake;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\CMakeFiles\3.13.3\CMakeCCompiler.cmake;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\CMakeFiles\3.13.3\CMakeRCCompiler.cmake;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\CMakeFiles\3.13.3\CMakeSystem.cmake;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\CMakeLists.txt;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\scripts\genchk.cmake.in;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\scripts\genout.cmake.in;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\scripts\gensrc.cmake.in;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\scripts\pnglibconf.h.prebuilt;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\scripts\test.cmake.in;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/alawi/Documents/RayTracer/RayTracer/LibPNG/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/alawi/Documents/RayTracer/RayTracer/LibPNG -BC:/Users/alawi/Documents/RayTracer/RayTracer/LibPNG --check-stamp-file C:/Users/alawi/Documents/RayTracer/RayTracer/LibPNG/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/alawi/Documents/RayTracer/RayTracer/LibPNG/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-ASM.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\SelectLibraryConfigurations.cmake;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\CMakeFiles\3.13.3\CMakeASMCompiler.cmake;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\CMakeFiles\3.13.3\CMakeCCompiler.cmake;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\CMakeFiles\3.13.3\CMakeRCCompiler.cmake;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\CMakeFiles\3.13.3\CMakeSystem.cmake;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\CMakeLists.txt;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\scripts\genchk.cmake.in;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\scripts\genout.cmake.in;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\scripts\gensrc.cmake.in;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\scripts\pnglibconf.h.prebuilt;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\scripts\test.cmake.in;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/alawi/Documents/RayTracer/RayTracer/LibPNG/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/alawi/Documents/RayTracer/RayTracer/LibPNG -BC:/Users/alawi/Documents/RayTracer/RayTracer/LibPNG --check-stamp-file C:/Users/alawi/Documents/RayTracer/RayTracer/LibPNG/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/alawi/Documents/RayTracer/RayTracer/LibPNG/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-ASM.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\SelectLibraryConfigurations.cmake;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\CMakeFiles\3.13.3\CMakeASMCompiler.cmake;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\CMakeFiles\3.13.3\CMakeCCompiler.cmake;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\CMakeFiles\3.13.3\CMakeRCCompiler.cmake;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\CMakeFiles\3.13.3\CMakeSystem.cmake;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\CMakeLists.txt;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\scripts\genchk.cmake.in;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\scripts\genout.cmake.in;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\scripts\gensrc.cmake.in;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\scripts\pnglibconf.h.prebuilt;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\scripts\test.cmake.in;C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\ZERO_CHECK.vcxproj">
+      <Project>{46A0DE6D-687D-35E8-9706-7D9ABF7C58DB}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\png.vcxproj">
+      <Project>{052E4A1B-20BE-355A-91F9-40D8B8C48FA3}</Project>
+      <Name>png</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\png-fix-itxt.vcxproj">
+      <Project>{1251CE0B-602B-38F2-9646-94C9768BF9A9}</Project>
+      <Name>png-fix-itxt</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\png_static.vcxproj">
+      <Project>{ABC71C8A-EA00-3EB2-9909-F52E9BDFAB07}</Project>
+      <Name>png_static</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\pngfix.vcxproj">
+      <Project>{93CCE5FE-0E34-34AD-878D-D8A89ACFF193}</Project>
+      <Name>pngfix</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\pngimage.vcxproj">
+      <Project>{D8F94247-9AC4-301A-B1E0-F2CBEB29B122}</Project>
+      <Name>pngimage</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\pngstest.vcxproj">
+      <Project>{E0E59477-F719-36D0-8CA7-B172745F40BA}</Project>
+      <Name>pngstest</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\pngtest.vcxproj">
+      <Project>{47F395A0-FCCE-3FD8-AF83-B7E2C36C7098}</Project>
+      <Name>pngtest</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\pngunknown.vcxproj">
+      <Project>{1C971844-972B-3A09-8156-EB1011DFB893}</Project>
+      <Name>pngunknown</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\alawi\Documents\RayTracer\RayTracer\LibPNG\pngvalid.vcxproj">
+      <Project>{7833B37B-D3D9-34D6-8A49-AE3AD70074A5}</Project>
+      <Name>pngvalid</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

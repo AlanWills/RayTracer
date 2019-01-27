@@ -40,8 +40,8 @@ World::World(void) :
 //------------------------------------------------------------------ render_scene
 void World::build()
 {
-  vp.set_hres(3);
-  vp.set_vres(3);
+  vp.set_hres(200);
+  vp.set_vres(200);
   vp.set_pixel_size(1.0f);
   vp.set_gamma(1.0f);
 
@@ -49,7 +49,7 @@ void World::build()
   tracer_ptr.reset(new SingleSphere(this));
 
   sphere.setCentre(0);
-  sphere.setRadius(1);
+  sphere.setRadius(85);
 }
 
 //------------------------------------------------------------------ render_scene
@@ -79,43 +79,49 @@ World::render_scene(void) const {
       imgdata[r * vres * 3 + c * 3 + 0] = pixel_color.r;
       imgdata[r * vres * 3 + c * 3 + 1] = pixel_color.g;
       imgdata[r * vres * 3 + c * 3 + 2] = pixel_color.b;
+      /*image.set_pixel(r, c, png::rgb_pixel(
+        static_cast<png::byte>(pixel_color.r * 255), 
+        static_cast<png::byte>(pixel_color.g * 255), 
+        static_cast<png::byte>(pixel_color.b * 255)));*/
     }
   }
 
-  std::ofstream f("MyImage.bin", std::ios::out | std::ios::trunc | std::ios::binary);
-  if (!f) return;
+  //image.write("output.png");
 
-  // Some basic
-  unsigned long headers_size = 14  // sizeof( BITMAPFILEHEADER )
-    + 40; // sizeof( BITMAPINFOHEADER )
-  unsigned long padding_size = 0;// (4 - ((hres * 3) % 4)) % 4;
-  unsigned long pixel_data_size = vres * ((hres * 3) + padding_size);
+  //std::ofstream f("MyImage.bin", std::ios::out | std::ios::trunc | std::ios::binary);
+  //if (!f) return;
 
-  // Write the BITMAPFILEHEADER
-  f.put('B').put('M');        
-  f << lwrite(headers_size + pixel_data_size, 4);  // bfSize
-  f << lwrite(0, 2);  // bfReserved1
-  f << lwrite(0, 2);  // bfReserved2
-  f << lwrite(headers_size, 4);  // bfOffBits
+  //// Some basic
+  //unsigned long headers_size = 14  // sizeof( BITMAPFILEHEADER )
+  //  + 40; // sizeof( BITMAPINFOHEADER )
+  //unsigned long padding_size = 0;// (4 - ((hres * 3) % 4)) % 4;
+  //unsigned long pixel_data_size = vres * ((hres * 3) + padding_size);
 
-  // Write the BITMAPINFOHEADER
-  f << lwrite(40, 4);  // biSize
-  f << lwrite(hres, 4);  // biWidth
-  f << lwrite(vres, 4);  // biHeight
-  f << lwrite(1, 2);  // biPlanes
-  f << lwrite(24, 2);  // biBitCount
-  f << lwrite(0, 4);  // biCompression=BI_RGB
-  f << lwrite(pixel_data_size, 4);  // biSizeImage
-  f << lwrite(0, 4);  // biXPelsPerMeter
-  f << lwrite(0, 4);  // biYPelsPerMeter
-  f << lwrite(0, 4);  // biClrUsed
-  f << lwrite(0, 4);  // biClrImportant
+  //// Write the BITMAPFILEHEADER
+  //f.put('B').put('M');        
+  //f << lwrite(headers_size + pixel_data_size, 4);  // bfSize
+  //f << lwrite(0, 2);  // bfReserved1
+  //f << lwrite(0, 2);  // bfReserved2
+  //f << lwrite(headers_size, 4);  // bfOffBits
 
-  // Write the pixel data
-  for (float fl : imgdata)
-  {
-    f.write(reinterpret_cast<const char*>(&fl), sizeof(float));
-  }
+  //// Write the BITMAPINFOHEADER
+  //f << lwrite(40, 4);  // biSize
+  //f << lwrite(hres, 4);  // biWidth
+  //f << lwrite(vres, 4);  // biHeight
+  //f << lwrite(1, 2);  // biPlanes
+  //f << lwrite(24, 2);  // biBitCount
+  //f << lwrite(0, 4);  // biCompression=BI_RGB
+  //f << lwrite(pixel_data_size, 4);  // biSizeImage
+  //f << lwrite(0, 4);  // biXPelsPerMeter
+  //f << lwrite(0, 4);  // biYPelsPerMeter
+  //f << lwrite(0, 4);  // biClrUsed
+  //f << lwrite(0, 4);  // biClrImportant
+
+  //// Write the pixel data
+  //for (float fl : imgdata)
+  //{
+  //  f.write(reinterpret_cast<const char*>(&fl), sizeof(float));
+  //}
 
   //for (int row = 0; row < vres; row++)           // bottom-to-top
   //{
@@ -145,15 +151,15 @@ World::render_scene(void) const {
 
   //  if (padding_size) f << lwrite(0, padding_size);
   //}
-/*
+
   std::fstream imgout("MyImage.bin", std::ios::out | std::ios::binary);
   for (int i = 0; i < vres * hres * 3; ++i)
   {
-    imgout.write(reinterpret_cast<const char*>(imgdata.get() + i), sizeof(float));
+    imgout.write(reinterpret_cast<const char*>(imgdata.data() + i), sizeof(float));
   }
 
   imgout.close();
-*/
+
  /* FILE * fp = fopen("file.bmp", "wb");
   fwrite(bmpfile_header, sizeof(bmpfile_header), 1, fp);
   fwrite(bmp_dib_v3_header, sizeof(bmp_dib_v3_header_t), 1, fp);

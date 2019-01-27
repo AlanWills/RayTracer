@@ -1,0 +1,14 @@
+C:/Users/alawi/Documents/RayTracer/RayTracer/LibPNG/CMakeFiles/png-fix-itxt.dir
+C:/Users/alawi/Documents/RayTracer/RayTracer/LibPNG/CMakeFiles/pngtest.dir
+C:/Users/alawi/Documents/RayTracer/RayTracer/LibPNG/CMakeFiles/genfiles.dir
+C:/Users/alawi/Documents/RayTracer/RayTracer/LibPNG/CMakeFiles/png.dir
+C:/Users/alawi/Documents/RayTracer/RayTracer/LibPNG/CMakeFiles/pngfix.dir
+C:/Users/alawi/Documents/RayTracer/RayTracer/LibPNG/CMakeFiles/png_static.dir
+C:/Users/alawi/Documents/RayTracer/RayTracer/LibPNG/CMakeFiles/pngvalid.dir
+C:/Users/alawi/Documents/RayTracer/RayTracer/LibPNG/CMakeFiles/pngunknown.dir
+C:/Users/alawi/Documents/RayTracer/RayTracer/LibPNG/CMakeFiles/pngstest.dir
+C:/Users/alawi/Documents/RayTracer/RayTracer/LibPNG/CMakeFiles/pngimage.dir
+C:/Users/alawi/Documents/RayTracer/RayTracer/LibPNG/CMakeFiles/RUN_TESTS.dir
+C:/Users/alawi/Documents/RayTracer/RayTracer/LibPNG/CMakeFiles/INSTALL.dir
+C:/Users/alawi/Documents/RayTracer/RayTracer/LibPNG/CMakeFiles/ALL_BUILD.dir
+C:/Users/alawi/Documents/RayTracer/RayTracer/LibPNG/CMakeFiles/ZERO_CHECK.dir
